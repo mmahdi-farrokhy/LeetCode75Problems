@@ -7,7 +7,6 @@ public class VowelReverser {
     private List<Character> vowels = Arrays.asList(new Character[]{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'});
 
     public String reverseVowels(String s) {
-        String result = "";
         char[] letters = s.toCharArray();
         int leftIndex = 0;
         int rightIndex = s.length() - 1;
