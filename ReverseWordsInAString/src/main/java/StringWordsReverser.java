@@ -1,8 +1,3 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class StringWordsReverser {
     public String reverseWords(String s) {
         String[] words = s.trim().split("\\s+");
