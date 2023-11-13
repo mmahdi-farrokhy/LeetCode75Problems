@@ -1,17 +1,11 @@
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class StringWordsReverser {
     public String reverseWords(String s) {
-        s = s.trim();
-        while (true) {
-            if (s.indexOf("  ") != -1)
-                s = s.replaceAll("  ", " ");
-            else
-                break;
-        }
-
-        String[] words = s.split(" ");
+        String[] words = s.trim().split("\\s+");
         int startIndex = 0;
         int endIndex = words.length - 1;
         while (startIndex < endIndex) {
